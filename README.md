@@ -2,7 +2,7 @@
 A banking application with calculators that calculate fixed-rate mortgages, car and consumer loans.
 
 Based on React, Node.js, MongoDB.
-To open the administrative panel enter ### `localhost:3000/admin`
+To open the administrative panel enter `localhost:3000/admin`
 
 Getting Started with Create React App
 
