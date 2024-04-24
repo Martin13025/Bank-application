@@ -3,6 +3,48 @@ import Calc1 from "./Calc1";
 import Calc2 from "./Calc2";
 import Calc3 from "./Calc3";
 import "./AdminPanel1.css"; /*Dont deplug it.*/
+import "./Login.css";
+
+function Login() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (username === "admin" && password === "admin") {
+      setIsLoggedIn(true);
+    } else {
+      alert("Неверное имя пользователя или пароль");
+    }
+  };
+
+  if (isLoggedIn) {
+    return <AdminPanel />;
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Имя пользователя:
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </label>
+      <label>
+        Пароль:
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </label>
+      <input type="submit" value="Войти" />
+    </form>
+  );
+}
 
 function AdminPanel() {
   const initialCalculators = JSON.parse(
@@ -67,7 +109,7 @@ function AdminPanel() {
 
   return (
     <div>
-      <p className="admin">ADMINPANEL</p>
+      <p className="admin">Admin Panel</p>
       {calculators.map((calc) => (
         <div key={calc.id}>
           <h2>{calc.name}</h2>
@@ -107,4 +149,4 @@ function AdminPanel() {
   );
 }
 
-export default AdminPanel;
+export default Login;
