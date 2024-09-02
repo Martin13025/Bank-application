@@ -30,18 +30,18 @@ function Calc2() {
     );
     setMonthlyPayment(monthlyPayment);
     setTotalPayment(totalPayment);
-    console.log(`Рассчитанный ежемесячный платёж: ${monthlyPayment}
-        и Общая сумма ипотеки ${totalPayment}`);
+    console.log(`Monthly Payment: ${monthlyPayment}
+        and Total Payment ${totalPayment}`);
   };
 
   return (
     <div className="Calc2">
-      <h3>Калькулятор автокредитования</h3>
-      <p>Годовая ставка по автокредиту - 3,5%</p>
+      <h3>Car loan calculator</h3>
+      <p>The annual Rate on a car loan - 3,5%</p>
       <div className="kredit">
         <h3>
-          Сумма автокредитования <br />
-          (в рублях)
+          The amount of car loans <br />
+          (in dollars)
         </h3>
       </div>
       <div className="div2">
@@ -49,9 +49,9 @@ function Calc2() {
       </div>
       <div className="kredit">
         <h3>
-          Первоначальный <br />
-          взнос <br />
-          (в рублях)
+          Initial <br />
+          payment <br />
+          (in dollars)
         </h3>
       </div>
       <div className="div2">
@@ -62,21 +62,21 @@ function Calc2() {
       </div>
       <div className="kredit">
         <h3>
-          Срок кредита <br />
-          (в годах)
+          Loan term <br />
+          (in years)
         </h3>
       </div>
       <div className="div2">
         <input type="number" onChange={(e) => setTerm(e.target.value)}></input>
       </div>
       <button className="styleButton" onClick={handleCalculate}>
-        Рассчитать
+        Calculate
       </button>
 
       <div className="kredit">
-        <h3>Ежемесячный платеж</h3>
+        <h3>Monthly payment</h3>
         <p>
-          {monthlyPayment} рублей и Общая сумма автокредитования: {totalPayment}{" "}
+          {monthlyPayment} doolars and Total Payment: {totalPayment}{" "}
           рублей
         </p>
       </div>
