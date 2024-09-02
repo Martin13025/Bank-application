@@ -30,18 +30,18 @@ function Calc3() {
     );
     setMonthlyPayment(monthlyPayment);
     setTotalPayment(totalPayment);
-    console.log(`Рассчитанный ежемесячный платёж: ${monthlyPayment}
-        и Общая сумма ипотеки ${totalPayment}`);
+    console.log(`Monthly Payment: ${monthlyPayment}
+        and Total Payment ${totalPayment}`);
   };
 
   return (
     <div className="Calc2">
-      <h3>Калькулятор потребительского кредита</h3>
-      <p>Годовая ставка по потребительскому кредиту - 14,5%</p>
+      <h3>Consumer credit calculator</h3>
+      <p>Annual rate on a consumer loan - 14,5%</p>
       <div className="kredit">
         <h3>
-          Сумма потребительского кредита <br />
-          (в рублях)
+          Amount of the consumer loan <br />
+          (in dollars)
         </h3>
       </div>
       <div className="div2">
@@ -49,9 +49,9 @@ function Calc3() {
       </div>
       <div className="kredit">
         <h3>
-          Первоначальный <br />
-          взнос <br />
-          (в рублях)
+          Initial <br />
+          payment <br />
+          (in dollars)
         </h3>
       </div>
       <div className="div2">
@@ -62,22 +62,22 @@ function Calc3() {
       </div>
       <div className="kredit">
         <h3>
-          Срок кредита <br />
-          (в годах)
+          Loan term <br />
+          (in years)
         </h3>
       </div>
       <div className="div2">
         <input type="number" onChange={(e) => setTerm(e.target.value)}></input>
       </div>
       <button className="styleButton" onClick={handleCalculate}>
-        Рассчитать
+        Calculate
       </button>
 
       <div className="kredit">
-        <h3>Ежемесячный платеж</h3>
+        <h3>Monthly payment</h3>
         <p>
-          {monthlyPayment} рублей и Общая сумма потребительского кредита:{" "}
-          {totalPayment} рублей
+          {monthlyPayment} dollars and Total Payment:{" "}
+          {totalPayment} dollars
         </p>
       </div>
     </div>
