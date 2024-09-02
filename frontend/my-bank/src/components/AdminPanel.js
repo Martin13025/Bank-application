@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Calc1 from "./Calc1";
 import Calc2 from "./Calc2";
 import Calc3 from "./Calc3";
-import "./AdminPanel1.css"; /*Dont deplug it.*/
+import "./AdminPanel1.css"; /*Don't deplug it*/
 import "./Login.css";
 
 function Login() {
@@ -15,7 +15,7 @@ function Login() {
     if (username === "admin" && password === "admin") {
       setIsLoggedIn(true);
     } else {
-      alert("Неверное имя пользователя или пароль");
+      alert("Illegal username or password");
     }
   };
 
@@ -26,7 +26,7 @@ function Login() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Имя пользователя:
+        Username:
         <input
           type="text"
           value={username}
@@ -34,14 +34,14 @@ function Login() {
         />
       </label>
       <label>
-        Пароль:
+        Password:
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </label>
-      <input type="submit" value="Войти" />
+      <input type="submit" value="Enter" />
     </form>
   );
 }
