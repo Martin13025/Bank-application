@@ -4,7 +4,7 @@ import "./Header.css";
 function Header() {
   return (
     <div className="Header">
-      <h1>Финансовый гарант</h1>
+      <h1>Financial guarantor</h1>
     </div>
   );
 }
