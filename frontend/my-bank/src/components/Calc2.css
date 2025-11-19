@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap");
 
 .Calc2 {
-  background-color: #f8ffcc;
+  background-color: #ffffff;
   margin: 25px 24px;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .Calc2:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .Calc2 h3 {
   font-family: "Ruda", sans-serif;
   font-weight: 600;
   margin: 10px 20px;
-  color: #333;
+  color: #1c1c1e;
 }
 
 .Calc2 p {
@@ -30,20 +30,21 @@
 
 .div2 input {
   width: 25%;
-  height: 30px;
-  border-radius: 12px;
-  border: 1px solid #333;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
   margin: 10px 20px;
   padding: 0 10px;
   position: relative;
   left: 170px;
   top: -45px;
+  background-color: #f8f9fc;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .div2 input:focus {
-  border-color: #ff5334;
-  box-shadow: 0 0 5px rgba(255, 83, 52, 0.5);
+  border-color: #0066ff;
+  box-shadow: 0 0 5px rgba(0, 102, 255, 0.3);
   outline: none;
 }
 
@@ -51,11 +52,11 @@
   font-family: "Ruda", sans-serif;
   font-weight: 600;
   width: 45%;
-  color: #333;
+  color: #1c1c1e;
 }
 
 .styleButton {
-  background-color: #ffe600;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   margin: 20px 110px;
   width: 110px;
   height: 44px;
@@ -63,12 +64,14 @@
   border: none;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .styleButton:hover {
-  background-color: #ffd500;
+  background: linear-gradient(135deg, #3ea1fd, #00e0ff);
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
