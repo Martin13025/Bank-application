@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  form {
+    width: 70%;
+  }
+}
+
 @media (max-width: 480px) {
   form {
     width: 90%;
@@ -18,8 +24,18 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   form {
-    width: 70%;
+    width: 95%;
+    padding: 10px;
+    margin: 15px auto;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    font-size: 0.9rem;
   }
 }
+
